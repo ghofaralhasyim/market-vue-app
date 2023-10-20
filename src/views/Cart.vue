@@ -97,10 +97,10 @@ const removeFromCart = ({ index, id }: { id: number; index: number }) => {
           </div>
         </li>
       </ul>
-      <div v-else class="py-4">
+      <div v-else class="py-4 border rounded px-4">
         <p class="mb-4">Whoops, keranjang kamu masih kosong.</p>
         <RouterLink to="/" class="py-1 px-4 bg-purple-500 text-white rounded"
-          >Cari product</RouterLink
+          >Cari produk</RouterLink
         >
       </div>
     </section>

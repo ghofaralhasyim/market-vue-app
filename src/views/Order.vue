@@ -47,8 +47,8 @@ onMounted(() => {
     <div class="font-bold">
       <span>Total : ${{ summary?.total }}</span>
     </div>
-    <RouterLink to="/" class="py-1 px-4 bg-purple-500 text-white rounded my-4"
-      >Kembali ke beranda</RouterLink
+    <RouterLink to="/transaksi" class="py-1 px-4 bg-purple-500 text-white rounded my-4"
+      >Lihat riwayat transaksi</RouterLink
     >
   </section>
 </template>

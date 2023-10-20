@@ -23,6 +23,12 @@ const show = ref(false)
       >
         <nav class="w-full px-4">
           <ul class="flex flex-col md:flex-row">
+            <li class="p-4 md:hidden border-b border-gray-200">
+              <button class="mr-4" @click="show = false">
+                <v-icon name="io-arrow-forward" class="rotate-180" @click="show = true"></v-icon>
+                <span class="ml-2">Back</span>
+              </button>
+            </li>
             <li class="p-4">
               <RouterLink to="/cart" class="relative" @click="show = false">
                 <div
@@ -30,6 +36,11 @@ const show = ref(false)
                   class="bg-red-500 w-2 h-2 rounded-full absolute left-0 top-0"
                 ></div>
                 <v-icon name="io-cart-outline"></v-icon> Cart
+              </RouterLink>
+            </li>
+            <li class="p-4">
+              <RouterLink to="/transaksi" class="relative" @click="show = false">
+                <v-icon name="io-bag-check-outline"></v-icon> Transaksi
               </RouterLink>
             </li>
           </ul>
